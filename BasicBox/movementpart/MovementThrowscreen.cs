@@ -22,21 +22,20 @@ public class Movement : MonoBehaviour
     void Move()
     {     if (Input.GetKey(KeyCode.D))
             {
-                transform.position +=new Vector3(xspeed,0,0);
+               Moveright()
                 }
 
                     if (Input.GetKey(KeyCode.A))
                 {
-                    transform.position -=new Vector3(xspeed,0,0);
-                    }
+                  Moveleft()
+                  }
       
                     if (Input.GetKey(KeyCode.W))
-                {
-                    transform.position +=new Vector3(0,yspeed,0);
+             { Moveup()
                     }
                         if (Input.GetKey(KeyCode.S))
                 {
-                    transform.position -=new Vector3(0,yspeed,0);
+                     Movedown()
                     }
 
     }
